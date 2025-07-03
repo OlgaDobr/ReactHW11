@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import PersonalPage from './Components/PersonalPage';
+import Form from './Components/RegistrationForm';
+import PhotoUploadForm from './Components/PhotoUploadForm';
+import RegistrationForm from './Components/RegistrationForm';
+import Cities from './Components/Cities';
+import Bands from './Components/Bands';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <PersonalPage/>
+      <RegistrationForm/>
+      <PhotoUploadForm/>
+      <Cities/>
+      <Bands/>
     </div>
   );
 }
